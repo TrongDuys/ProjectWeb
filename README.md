@@ -44,4 +44,6 @@ npm start
 
 # Note
 
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+
 - ![#f03c15]( At the .env file is using the author's MongoDB data. Please create your own database instead of using an existing one.) `#f03c15`
