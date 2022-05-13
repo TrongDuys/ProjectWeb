@@ -8,24 +8,36 @@ clone source code: https://github.com/TrongDuys/ProjectWeb.git
 
 # Install Package BackEnd
 
-> npm install
+```
+npm install
+```
 
 # Install Package FontEnd
 
-> cd client
+```
+cd client
+```
 
-> npm install
+```
+npm install
+```
 
 # Run server
 
 - At the root directory
 
-> npm run server
+```
+npm run server
+```
 
 # Run client
 
 - Move folder client
 
-> cd client
+```
+cd client
+```
 
-> npm start
+```
+npm start
+```
