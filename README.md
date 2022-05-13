@@ -1,27 +1,29 @@
-# WebDev
-
 # Installing
 
 ---
 
-`clone: https://github.com/TrongDuys/ProjectWeb.git`
+> clone source code: https://github.com/TrongDuys/ProjectWeb.git
 
 # Install Package BackEnd
 
-`npm install`
+> npm install
 
 # Install Package FontEnd
 
-`cd client`
-`npm install`
+> cd client
 
-# run server
+> npm install
 
-- at the root directory
-  `npm run server`
+# Run server
 
-# run client
+- At the root directory
 
-- move folder client
-  `cd client`
-  ` npm start`
+> npm run server
+
+# Run client
+
+- Move folder client
+
+> cd client
+
+> npm start
