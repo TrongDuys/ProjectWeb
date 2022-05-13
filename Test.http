@@ -1,0 +1,85 @@
+POST http://localhost:5000/api/refresh_token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWQ2NjFkMTgzOTJjMDMzMDliYjY0OCIsImlhdCI6MTYzNTU4NzY3OSwiZXhwIjoxNjM1Njc0MDc5fQ.uaGsVRXO6GRjSnNMwLSAuxa-Zos41FsafYUlBhiR9tc
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "abc@gmail.com",
+    "password": "123123"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTIyNTQyYTBjYjg1ZjcyZTVjYTAwYyIsImlhdCI6MTYzNzU1NTE2MCwiZXhwIjoxNjM3NjQxNTYwfQ.QBTKYetkp0x_20JA5a2iPIgSq8Ib9ahcndbY0CvZghI
+
+###
+
+POST http://localhost:5000/api/logout
+Content-Type: application/json
+Authorization: Bearer
+
+###
+
+POST http://localhost:5000/api/register
+Content-Type: application/json
+Authorization: Bearer
+
+{
+    "fullname": "Le Sy Thanh",
+    "username": "ahanhLe",
+    "email": "abc@gmail.com",
+    "password": "123123",
+    "role": "user"
+}
+
+###
+
+POST http://localhost:5000/api/disease
+Content-Type: application/json
+Authorization: Bearer
+
+{
+    "disease": "Late_blight",
+    "symptom": "Bệnh gây hại từ khi cây còn nhỏ, thường thấy giai đoạn cây ra hoa đến thu hoạch. Bệnh gây hại trên lá, thân và quả. Vết bệnh đầu tiên ở mép lá, có màu xanh tái như úng nước, sau đó lan dần vào phía trong phiến lá, màu nâu, có ranh giới rõ rệt với phần còn lại của phiến lá. Ở mặt dưới lá chổ vết bệnh có lớp mốc trắng như sương, bệnh nặng làm lá thối nhũn, thời tiết khô vết bệnh khô dòn dễ vỡ.",
+    "reason": "Bệnh thường phát triển mạnh trong điều kiện thời tiết ẩm và mát, nhiệt độ 18-22 oC, có một thời gian nhiệt độ xuống thấp 12-15 oC, có nhiều sương và mưa. Bệnh gây hại nặng trong vụ Đông Xuân trên cây cà chua, khoai tây và nhiều cây trồng khác. Sợi nấm lưu tồn trên tàn dư cây bệnh, lan truyền theo gió,mưa lây lan ra diện rộng.",
+    "solution":"Vệ sinh đồng ruộng, thu gom và tiêu hủy tàn dư cây bệnh. Trồng giống kháng bệnh. Bón vôi, phân hữu cơ, phân gà trước khi gieo trồng. Luân canh với cây trồng khác, không luân canh với khoai tây. Ngắt và tiêu hủy lá già, lá bị bệnh. Khi có đợt gió lạnh kèm theo mưa phùn hoặc sương giá nên phun thuốc phòng.bệnh",
+    "url": "http://www.congtyhai.com/tru-benh-suong-mai-ua-muon-tren-cay-ca-chua"
+}
+
+###
+
+GET http://localhost:5000/api/disease?disease=Bacterial_spot
+Content-Type: application/json
+Authorization: Bearer
+
+{
+    "disease": "",
+    "symptom": "",
+    "solution": "",
+    "url": ""
+}
+
+
+###
+
+GET http://localhost:5000/api/getuser
+Content-Type: application/json
+Authorization: Bearer
+
+{
+    "disease": "Septoria_leaf_spot",
+    "symptom": "",
+    "reason": "",
+    "solution":"",
+    "url": ""
+}
+
+###
+
+GET http://localhost:5000/activated/user/620e05393017350c9a3a7057
+Content-Type: application/json
