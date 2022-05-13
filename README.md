@@ -44,4 +44,4 @@ npm start
 
 # Note
 
-<span style="color:red;">At the .env file is using the author's MongoDB data. Please create your own database instead of using an existing one.</span>
+<font color="red">At the .env file is using the author's MongoDB data. Please create your own database instead of using an existing one.</font>
